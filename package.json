@@ -1,0 +1,18 @@
+{
+  "name": "kintone-dev-mark",
+  "version": "1.0.0",
+  "description": "rack-dev-markのようにkintoneに開発環境リボンを付ける",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TailsGarden/kintone-dev-mark.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/TailsGarden/kintone-dev-mark/issues"
+  },
+  "homepage": "https://github.com/TailsGarden/kintone-dev-mark#readme",
+  "private": true
+}
