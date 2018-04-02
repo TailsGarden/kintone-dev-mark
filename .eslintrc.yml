@@ -1,0 +1,29 @@
+env:
+  browser: true
+extends:
+  - standard
+  - plugin:import/errors
+  - prettier
+  - prettier/standard
+globals:
+  kintone: true
+parser: 'babel-eslint'
+rules:
+  # 戻り値を受け取らないnew()は認める
+  no-new: off
+  # console.log を残さない console.warn/error はOK
+  no-console:
+    - error
+    - allow:
+      - warn
+      - error
+  # デバッガは許可
+  no-debugger: off
+  # varで変数宣言は禁止
+  no-var: error
+  # 原則letよりconstを使う
+  prefer-const: error
+  # 全角スペースはエラー（テンプレート文字列では認める）
+  no-irregular-whitespace:
+    - error
+    - skipTemplates: true

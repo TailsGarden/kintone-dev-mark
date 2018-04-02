@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "rack-dev-markのようにkintoneに開発環境リボンを付ける",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress",
+    "watch": "webpack --progress --watch",
+    "prettier": "prettier --write webpack.config.js \"src/**/*.js\"",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
@@ -14,5 +17,30 @@
     "url": "https://github.com/TailsGarden/kintone-dev-mark/issues"
   },
   "homepage": "https://github.com/TailsGarden/kintone-dev-mark#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "github-fork-ribbon-css": "^0.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-import-resolver-webpack": "^0.9.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "exports-loader": "^0.7.0",
+    "html-loader": "^0.5.5",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  }
 }
