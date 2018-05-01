@@ -3,11 +3,6 @@ module.exports = {
   entry: {
     devMark: './devMark.js',
   },
-  output: {
-    path: `${process.env.HOME}/Dropbox/n2jk_kintone/tailsgarden_global`,
-    filename: '[name].js',
-  },
-
   devtool: 'inline-source-map',
 
   module: {
